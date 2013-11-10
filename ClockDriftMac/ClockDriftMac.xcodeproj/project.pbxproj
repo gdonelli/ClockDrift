@@ -1,0 +1,591 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		065716CE18304885003B15ED /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 065716CD18304885003B15ED /* Cocoa.framework */; };
+		065716D818304885003B15ED /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 065716D618304885003B15ED /* InfoPlist.strings */; };
+		065716DA18304885003B15ED /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 065716D918304885003B15ED /* main.m */; };
+		065716DE18304885003B15ED /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 065716DC18304885003B15ED /* Credits.rtf */; };
+		065716E118304885003B15ED /* CDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 065716E018304885003B15ED /* CDAppDelegate.m */; };
+		065716E418304885003B15ED /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 065716E218304885003B15ED /* MainMenu.xib */; };
+		065716E618304885003B15ED /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 065716E518304885003B15ED /* Images.xcassets */; };
+		065716ED18304885003B15ED /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 065716EC18304885003B15ED /* XCTest.framework */; };
+		065716EE18304885003B15ED /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 065716CD18304885003B15ED /* Cocoa.framework */; };
+		065716F618304885003B15ED /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 065716F418304885003B15ED /* InfoPlist.strings */; };
+		065716F818304885003B15ED /* ClockDriftMacTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 065716F718304885003B15ED /* ClockDriftMacTests.m */; };
+		0657172218304C84003B15ED /* libpeertalk.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0657171418304C4B003B15ED /* libpeertalk.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		065716EF18304885003B15ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 065716C218304885003B15ED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 065716C918304885003B15ED;
+			remoteInfo = ClockDriftMac;
+		};
+		0657171318304C4B003B15ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0657170C18304C4B003B15ED /* peertalk.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6A88FA30150D613800FC3647;
+			remoteInfo = peertalk;
+		};
+		0657171518304C4B003B15ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0657170C18304C4B003B15ED /* peertalk.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6A88FA44150D613800FC3647;
+			remoteInfo = peertalkTests;
+		};
+		0657171718304C4B003B15ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0657170C18304C4B003B15ED /* peertalk.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6A64AAC6152604D40065BF86;
+			remoteInfo = "Peertalk Example";
+		};
+		0657171918304C4B003B15ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0657170C18304C4B003B15ED /* peertalk.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6A64AAE21526050D0065BF86;
+			remoteInfo = "Peertalk iOS Example";
+		};
+		0657172018304C77003B15ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0657170C18304C4B003B15ED /* peertalk.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 6A88FA2F150D613800FC3647;
+			remoteInfo = peertalk;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		065716CA18304885003B15ED /* ClockDriftMac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClockDriftMac.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		065716CD18304885003B15ED /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		065716D018304885003B15ED /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		065716D118304885003B15ED /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		065716D218304885003B15ED /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		065716D518304885003B15ED /* ClockDriftMac-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ClockDriftMac-Info.plist"; sourceTree = "<group>"; };
+		065716D718304885003B15ED /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		065716D918304885003B15ED /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		065716DB18304885003B15ED /* ClockDriftMac-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ClockDriftMac-Prefix.pch"; sourceTree = "<group>"; };
+		065716DD18304885003B15ED /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		065716DF18304885003B15ED /* CDAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDAppDelegate.h; sourceTree = "<group>"; };
+		065716E018304885003B15ED /* CDAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDAppDelegate.m; sourceTree = "<group>"; };
+		065716E318304885003B15ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		065716E518304885003B15ED /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		065716EB18304885003B15ED /* ClockDriftMacTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClockDriftMacTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		065716EC18304885003B15ED /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		065716F318304885003B15ED /* ClockDriftMacTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ClockDriftMacTests-Info.plist"; sourceTree = "<group>"; };
+		065716F518304885003B15ED /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		065716F718304885003B15ED /* ClockDriftMacTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClockDriftMacTests.m; sourceTree = "<group>"; };
+		06571701183048C6003B15ED /* PTChannel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PTChannel.h; path = ../../peertalk/peertalk/PTChannel.h; sourceTree = "<group>"; };
+		06571703183048C6003B15ED /* PTProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PTProtocol.h; path = ../../peertalk/peertalk/PTProtocol.h; sourceTree = "<group>"; };
+		06571705183048C6003B15ED /* PTUSBHub.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PTUSBHub.h; path = ../../peertalk/peertalk/PTUSBHub.h; sourceTree = "<group>"; };
+		0657170B18304902003B15ED /* PTExampleProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PTExampleProtocol.h; path = "../../peertalk/Peertalk Example/PTExampleProtocol.h"; sourceTree = "<group>"; };
+		0657170C18304C4B003B15ED /* peertalk.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = peertalk.xcodeproj; path = ../../peertalk/peertalk.xcodeproj; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		065716C718304885003B15ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0657172218304C84003B15ED /* libpeertalk.a in Frameworks */,
+				065716CE18304885003B15ED /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		065716E818304885003B15ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				065716EE18304885003B15ED /* Cocoa.framework in Frameworks */,
+				065716ED18304885003B15ED /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		065716C118304885003B15ED = {
+			isa = PBXGroup;
+			children = (
+				065716D318304885003B15ED /* ClockDriftMac */,
+				065716F118304885003B15ED /* ClockDriftMacTests */,
+				065716CC18304885003B15ED /* Frameworks */,
+				065716CB18304885003B15ED /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		065716CB18304885003B15ED /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				065716CA18304885003B15ED /* ClockDriftMac.app */,
+				065716EB18304885003B15ED /* ClockDriftMacTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		065716CC18304885003B15ED /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				065716CD18304885003B15ED /* Cocoa.framework */,
+				065716EC18304885003B15ED /* XCTest.framework */,
+				065716CF18304885003B15ED /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		065716CF18304885003B15ED /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				065716D018304885003B15ED /* AppKit.framework */,
+				065716D118304885003B15ED /* CoreData.framework */,
+				065716D218304885003B15ED /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		065716D318304885003B15ED /* ClockDriftMac */ = {
+			isa = PBXGroup;
+			children = (
+				0657170A183048CD003B15ED /* peer talk pieces */,
+				065716DF18304885003B15ED /* CDAppDelegate.h */,
+				065716E018304885003B15ED /* CDAppDelegate.m */,
+				065716E218304885003B15ED /* MainMenu.xib */,
+				0657170C18304C4B003B15ED /* peertalk.xcodeproj */,
+				065716E518304885003B15ED /* Images.xcassets */,
+				065716D418304885003B15ED /* Supporting Files */,
+			);
+			path = ClockDriftMac;
+			sourceTree = "<group>";
+		};
+		065716D418304885003B15ED /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				065716D518304885003B15ED /* ClockDriftMac-Info.plist */,
+				065716D618304885003B15ED /* InfoPlist.strings */,
+				065716D918304885003B15ED /* main.m */,
+				065716DB18304885003B15ED /* ClockDriftMac-Prefix.pch */,
+				065716DC18304885003B15ED /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		065716F118304885003B15ED /* ClockDriftMacTests */ = {
+			isa = PBXGroup;
+			children = (
+				065716F718304885003B15ED /* ClockDriftMacTests.m */,
+				065716F218304885003B15ED /* Supporting Files */,
+			);
+			path = ClockDriftMacTests;
+			sourceTree = "<group>";
+		};
+		065716F218304885003B15ED /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				065716F318304885003B15ED /* ClockDriftMacTests-Info.plist */,
+				065716F418304885003B15ED /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0657170A183048CD003B15ED /* peer talk pieces */ = {
+			isa = PBXGroup;
+			children = (
+				0657170B18304902003B15ED /* PTExampleProtocol.h */,
+				06571701183048C6003B15ED /* PTChannel.h */,
+				06571703183048C6003B15ED /* PTProtocol.h */,
+				06571705183048C6003B15ED /* PTUSBHub.h */,
+			);
+			name = "peer talk pieces";
+			sourceTree = "<group>";
+		};
+		0657170D18304C4B003B15ED /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0657171418304C4B003B15ED /* libpeertalk.a */,
+				0657171618304C4B003B15ED /* peertalkTests.octest */,
+				0657171818304C4B003B15ED /* Peertalk Example.app */,
+				0657171A18304C4B003B15ED /* Peertalk iOS Example.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		065716C918304885003B15ED /* ClockDriftMac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 065716FB18304885003B15ED /* Build configuration list for PBXNativeTarget "ClockDriftMac" */;
+			buildPhases = (
+				065716C618304885003B15ED /* Sources */,
+				065716C718304885003B15ED /* Frameworks */,
+				065716C818304885003B15ED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0657172118304C77003B15ED /* PBXTargetDependency */,
+			);
+			name = ClockDriftMac;
+			productName = ClockDriftMac;
+			productReference = 065716CA18304885003B15ED /* ClockDriftMac.app */;
+			productType = "com.apple.product-type.application";
+		};
+		065716EA18304885003B15ED /* ClockDriftMacTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 065716FE18304885003B15ED /* Build configuration list for PBXNativeTarget "ClockDriftMacTests" */;
+			buildPhases = (
+				065716E718304885003B15ED /* Sources */,
+				065716E818304885003B15ED /* Frameworks */,
+				065716E918304885003B15ED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				065716F018304885003B15ED /* PBXTargetDependency */,
+			);
+			name = ClockDriftMacTests;
+			productName = ClockDriftMacTests;
+			productReference = 065716EB18304885003B15ED /* ClockDriftMacTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		065716C218304885003B15ED /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = CD;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Astro HQ LLC";
+				TargetAttributes = {
+					065716EA18304885003B15ED = {
+						TestTargetID = 065716C918304885003B15ED;
+					};
+				};
+			};
+			buildConfigurationList = 065716C518304885003B15ED /* Build configuration list for PBXProject "ClockDriftMac" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 065716C118304885003B15ED;
+			productRefGroup = 065716CB18304885003B15ED /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 0657170D18304C4B003B15ED /* Products */;
+					ProjectRef = 0657170C18304C4B003B15ED /* peertalk.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				065716C918304885003B15ED /* ClockDriftMac */,
+				065716EA18304885003B15ED /* ClockDriftMacTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		0657171418304C4B003B15ED /* libpeertalk.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libpeertalk.a;
+			remoteRef = 0657171318304C4B003B15ED /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0657171618304C4B003B15ED /* peertalkTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = peertalkTests.octest;
+			remoteRef = 0657171518304C4B003B15ED /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0657171818304C4B003B15ED /* Peertalk Example.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = "Peertalk Example.app";
+			remoteRef = 0657171718304C4B003B15ED /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0657171A18304C4B003B15ED /* Peertalk iOS Example.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = "Peertalk iOS Example.app";
+			remoteRef = 0657171918304C4B003B15ED /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		065716C818304885003B15ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				065716D818304885003B15ED /* InfoPlist.strings in Resources */,
+				065716E618304885003B15ED /* Images.xcassets in Resources */,
+				065716DE18304885003B15ED /* Credits.rtf in Resources */,
+				065716E418304885003B15ED /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		065716E918304885003B15ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				065716F618304885003B15ED /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		065716C618304885003B15ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				065716DA18304885003B15ED /* main.m in Sources */,
+				065716E118304885003B15ED /* CDAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		065716E718304885003B15ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				065716F818304885003B15ED /* ClockDriftMacTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		065716F018304885003B15ED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 065716C918304885003B15ED /* ClockDriftMac */;
+			targetProxy = 065716EF18304885003B15ED /* PBXContainerItemProxy */;
+		};
+		0657172118304C77003B15ED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = peertalk;
+			targetProxy = 0657172018304C77003B15ED /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		065716D618304885003B15ED /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				065716D718304885003B15ED /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		065716DC18304885003B15ED /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				065716DD18304885003B15ED /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		065716E218304885003B15ED /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				065716E318304885003B15ED /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		065716F418304885003B15ED /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				065716F518304885003B15ED /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		065716F918304885003B15ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		065716FA18304885003B15ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		065716FC18304885003B15ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ClockDriftMac/ClockDriftMac-Prefix.pch";
+				INFOPLIST_FILE = "ClockDriftMac/ClockDriftMac-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		065716FD18304885003B15ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ClockDriftMac/ClockDriftMac-Prefix.pch";
+				INFOPLIST_FILE = "ClockDriftMac/ClockDriftMac-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		065716FF18304885003B15ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ClockDriftMac.app/Contents/MacOS/ClockDriftMac";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ClockDriftMac/ClockDriftMac-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "ClockDriftMacTests/ClockDriftMacTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		0657170018304885003B15ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ClockDriftMac.app/Contents/MacOS/ClockDriftMac";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ClockDriftMac/ClockDriftMac-Prefix.pch";
+				INFOPLIST_FILE = "ClockDriftMacTests/ClockDriftMacTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		065716C518304885003B15ED /* Build configuration list for PBXProject "ClockDriftMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				065716F918304885003B15ED /* Debug */,
+				065716FA18304885003B15ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		065716FB18304885003B15ED /* Build configuration list for PBXNativeTarget "ClockDriftMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				065716FC18304885003B15ED /* Debug */,
+				065716FD18304885003B15ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		065716FE18304885003B15ED /* Build configuration list for PBXNativeTarget "ClockDriftMacTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				065716FF18304885003B15ED /* Debug */,
+				0657170018304885003B15ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 065716C218304885003B15ED /* Project object */;
+}
