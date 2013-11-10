@@ -111,10 +111,10 @@ and on your Mac:
             </objects>
             <point key="canvasLocation" x="-226" y="20"/>
         </scene>
-        <!--View Controller-->
+        <!--Peer Talk View Controller-->
         <scene sceneID="mbv-ki-YGQ">
             <objects>
-                <viewController id="0gi-77-Ibx" sceneMemberID="viewController">
+                <viewController id="0gi-77-Ibx" customClass="CDPeerTalkViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8H2-e9-Slb">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -143,10 +143,30 @@ running Clock Drift</string>
                                 <rect key="frame" x="122" y="150" width="64" height="64"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
                             </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Connected" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="0x9-lp-fJC">
+                                <rect key="frame" x="170" y="434" width="139" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.77779085090361444" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Disconnected" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="goA-Do-ODX">
+                                <rect key="frame" x="12" y="434" width="126" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.93271131400602414" green="0.0" blue="0.22004423945783122" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="fmO-63-xga"/>
+                    <connections>
+                        <outlet property="connectedLabel" destination="0x9-lp-fJC" id="Qvx-lG-Dkp"/>
+                        <outlet property="disconnectedLabel" destination="goA-Do-ODX" id="Y9j-39-Wnx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="58o-zO-evW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -24,6 +24,9 @@
 		065716AF18303E50003B15ED /* connect_usb@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 065716AE18303E50003B15ED /* connect_usb@2x.png */; };
 		065716B318303F10003B15ED /* icon_mac128@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 065716B218303F10003B15ED /* icon_mac128@2x.png */; };
 		065716B518303F59003B15ED /* icon_mac64@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 065716B418303F59003B15ED /* icon_mac64@2x.png */; };
+		065716B818304142003B15ED /* CDPeerTalkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 065716B718304142003B15ED /* CDPeerTalkViewController.m */; };
+		065716BB18304206003B15ED /* PTChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = 065716BA18304206003B15ED /* PTChannel.m */; };
+		065716BE18304255003B15ED /* PTProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 065716BD18304255003B15ED /* PTProtocol.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +62,13 @@
 		065716AE18303E50003B15ED /* connect_usb@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "connect_usb@2x.png"; path = "../../Art/connect_usb@2x.png"; sourceTree = "<group>"; };
 		065716B218303F10003B15ED /* icon_mac128@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon_mac128@2x.png"; path = "../../Art/icon_mac128@2x.png"; sourceTree = "<group>"; };
 		065716B418303F59003B15ED /* icon_mac64@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon_mac64@2x.png"; path = "../../Art/icon_mac64@2x.png"; sourceTree = "<group>"; };
+		065716B618304142003B15ED /* CDPeerTalkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDPeerTalkViewController.h; sourceTree = "<group>"; };
+		065716B718304142003B15ED /* CDPeerTalkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDPeerTalkViewController.m; sourceTree = "<group>"; };
+		065716B9183041E4003B15ED /* PTChannel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PTChannel.h; path = ../../peertalk/peertalk/PTChannel.h; sourceTree = "<group>"; };
+		065716BA18304206003B15ED /* PTChannel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PTChannel.m; path = ../../peertalk/peertalk/PTChannel.m; sourceTree = "<group>"; };
+		065716BC18304255003B15ED /* PTProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PTProtocol.h; path = ../../peertalk/peertalk/PTProtocol.h; sourceTree = "<group>"; };
+		065716BD18304255003B15ED /* PTProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PTProtocol.m; path = ../../peertalk/peertalk/PTProtocol.m; sourceTree = "<group>"; };
+		065716C018304345003B15ED /* PTExampleProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PTExampleProtocol.h; path = "../../peertalk/Peertalk Example/PTExampleProtocol.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +133,9 @@
 				0657168B183004DA003B15ED /* Main.storyboard */,
 				0657168E183004DA003B15ED /* CDViewController.h */,
 				0657168F183004DA003B15ED /* CDViewController.m */,
+				065716B618304142003B15ED /* CDPeerTalkViewController.h */,
+				065716B718304142003B15ED /* CDPeerTalkViewController.m */,
+				065716BF18304259003B15ED /* peertalk pieces */,
 				06571691183004DA003B15ED /* Images.xcassets */,
 				065716B418303F59003B15ED /* icon_mac64@2x.png */,
 				065716B218303F10003B15ED /* icon_mac128@2x.png */,
@@ -159,6 +172,18 @@
 				065716A1183004DA003B15ED /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		065716BF18304259003B15ED /* peertalk pieces */ = {
+			isa = PBXGroup;
+			children = (
+				065716C018304345003B15ED /* PTExampleProtocol.h */,
+				065716BC18304255003B15ED /* PTProtocol.h */,
+				065716BD18304255003B15ED /* PTProtocol.m */,
+				065716B9183041E4003B15ED /* PTChannel.h */,
+				065716BA18304206003B15ED /* PTChannel.m */,
+			);
+			name = "peertalk pieces";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,6 +290,9 @@
 				06571686183004DA003B15ED /* main.m in Sources */,
 				0657168A183004DA003B15ED /* CDAppDelegate.m in Sources */,
 				06571690183004DA003B15ED /* CDViewController.m in Sources */,
+				065716BB18304206003B15ED /* PTChannel.m in Sources */,
+				065716B818304142003B15ED /* CDPeerTalkViewController.m in Sources */,
+				065716BE18304255003B15ED /* PTProtocol.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -391,6 +419,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Clock Drift/Clock Drift-Prefix.pch";
 				INFOPLIST_FILE = "Clock Drift/Clock Drift-Info.plist";
@@ -404,6 +433,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Clock Drift/Clock Drift-Prefix.pch";
 				INFOPLIST_FILE = "Clock Drift/Clock Drift-Info.plist";
