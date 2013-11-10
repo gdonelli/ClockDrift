@@ -21,6 +21,9 @@
 		0657169B183004DA003B15ED /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0657167D183004DA003B15ED /* UIKit.framework */; };
 		065716A3183004DA003B15ED /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 065716A1183004DA003B15ED /* InfoPlist.strings */; };
 		065716A5183004DA003B15ED /* Clock_DriftTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 065716A4183004DA003B15ED /* Clock_DriftTests.m */; };
+		065716AF18303E50003B15ED /* connect_usb@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 065716AE18303E50003B15ED /* connect_usb@2x.png */; };
+		065716B318303F10003B15ED /* icon_mac128@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 065716B218303F10003B15ED /* icon_mac128@2x.png */; };
+		065716B518303F59003B15ED /* icon_mac64@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 065716B418303F59003B15ED /* icon_mac64@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,9 @@
 		065716A0183004DA003B15ED /* Clock DriftTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Clock DriftTests-Info.plist"; sourceTree = "<group>"; };
 		065716A2183004DA003B15ED /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		065716A4183004DA003B15ED /* Clock_DriftTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Clock_DriftTests.m; sourceTree = "<group>"; };
+		065716AE18303E50003B15ED /* connect_usb@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "connect_usb@2x.png"; path = "../../Art/connect_usb@2x.png"; sourceTree = "<group>"; };
+		065716B218303F10003B15ED /* icon_mac128@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon_mac128@2x.png"; path = "../../Art/icon_mac128@2x.png"; sourceTree = "<group>"; };
+		065716B418303F59003B15ED /* icon_mac64@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon_mac64@2x.png"; path = "../../Art/icon_mac64@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +124,9 @@
 				0657168E183004DA003B15ED /* CDViewController.h */,
 				0657168F183004DA003B15ED /* CDViewController.m */,
 				06571691183004DA003B15ED /* Images.xcassets */,
+				065716B418303F59003B15ED /* icon_mac64@2x.png */,
+				065716B218303F10003B15ED /* icon_mac128@2x.png */,
+				065716AE18303E50003B15ED /* connect_usb@2x.png */,
 				06571680183004DA003B15ED /* Supporting Files */,
 			);
 			path = "Clock Drift";
@@ -231,7 +240,10 @@
 			files = (
 				06571692183004DA003B15ED /* Images.xcassets in Resources */,
 				06571684183004DA003B15ED /* InfoPlist.strings in Resources */,
+				065716AF18303E50003B15ED /* connect_usb@2x.png in Resources */,
+				065716B318303F10003B15ED /* icon_mac128@2x.png in Resources */,
 				0657168D183004DA003B15ED /* Main.storyboard in Resources */,
+				065716B518303F59003B15ED /* icon_mac64@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

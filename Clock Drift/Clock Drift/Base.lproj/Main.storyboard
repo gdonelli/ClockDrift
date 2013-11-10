@@ -92,6 +92,7 @@ and on your Mac:
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="150" y="20"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="0w0-t2-Nde">
@@ -134,6 +135,14 @@ running Clock Drift</string>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="bottom" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="connect_usb.png" id="ubX-aP-lHT">
+                                <rect key="frame" x="34" y="212" width="240" height="268"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_mac64.png" id="pJm-yV-ogt">
+                                <rect key="frame" x="122" y="150" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                     </view>
@@ -141,9 +150,13 @@ running Clock Drift</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="58o-zO-evW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="714" y="6"/>
+            <point key="canvasLocation" x="537" y="20"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="connect_usb.png" width="51" height="240"/>
+        <image name="icon_mac64.png" width="64" height="64"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
