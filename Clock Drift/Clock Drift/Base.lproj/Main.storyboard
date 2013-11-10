@@ -54,7 +54,7 @@
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="9" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="WLC-fC-mXz">
                                         <rect key="frame" x="22" y="115" width="266" height="101"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <string key="text">To determine the clock drift over time for scientific porpoises you need to disable
+                                        <string key="text">To determine the clock drift over time for scientific purposes you need to disable
 "Set Automatically" in iOS:
     Settings->General->Date&amp;Time
 and on your Mac:
