@@ -1,0 +1,476 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0657167A183004DA003B15ED /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06571679183004DA003B15ED /* Foundation.framework */; };
+		0657167C183004DA003B15ED /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0657167B183004DA003B15ED /* CoreGraphics.framework */; };
+		0657167E183004DA003B15ED /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0657167D183004DA003B15ED /* UIKit.framework */; };
+		06571684183004DA003B15ED /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 06571682183004DA003B15ED /* InfoPlist.strings */; };
+		06571686183004DA003B15ED /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 06571685183004DA003B15ED /* main.m */; };
+		0657168A183004DA003B15ED /* CDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 06571689183004DA003B15ED /* CDAppDelegate.m */; };
+		0657168D183004DA003B15ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0657168B183004DA003B15ED /* Main.storyboard */; };
+		06571690183004DA003B15ED /* CDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0657168F183004DA003B15ED /* CDViewController.m */; };
+		06571692183004DA003B15ED /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06571691183004DA003B15ED /* Images.xcassets */; };
+		06571699183004DA003B15ED /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06571698183004DA003B15ED /* XCTest.framework */; };
+		0657169A183004DA003B15ED /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06571679183004DA003B15ED /* Foundation.framework */; };
+		0657169B183004DA003B15ED /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0657167D183004DA003B15ED /* UIKit.framework */; };
+		065716A3183004DA003B15ED /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 065716A1183004DA003B15ED /* InfoPlist.strings */; };
+		065716A5183004DA003B15ED /* Clock_DriftTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 065716A4183004DA003B15ED /* Clock_DriftTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0657169C183004DA003B15ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0657166E183004DA003B15ED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 06571675183004DA003B15ED;
+			remoteInfo = "Clock Drift";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		06571676183004DA003B15ED /* Clock Drift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Clock Drift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		06571679183004DA003B15ED /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		0657167B183004DA003B15ED /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		0657167D183004DA003B15ED /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		06571681183004DA003B15ED /* Clock Drift-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Clock Drift-Info.plist"; sourceTree = "<group>"; };
+		06571683183004DA003B15ED /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		06571685183004DA003B15ED /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		06571687183004DA003B15ED /* Clock Drift-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Clock Drift-Prefix.pch"; sourceTree = "<group>"; };
+		06571688183004DA003B15ED /* CDAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDAppDelegate.h; sourceTree = "<group>"; };
+		06571689183004DA003B15ED /* CDAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDAppDelegate.m; sourceTree = "<group>"; };
+		0657168C183004DA003B15ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0657168E183004DA003B15ED /* CDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDViewController.h; sourceTree = "<group>"; };
+		0657168F183004DA003B15ED /* CDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDViewController.m; sourceTree = "<group>"; };
+		06571691183004DA003B15ED /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		06571697183004DA003B15ED /* Clock DriftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Clock DriftTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		06571698183004DA003B15ED /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		065716A0183004DA003B15ED /* Clock DriftTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Clock DriftTests-Info.plist"; sourceTree = "<group>"; };
+		065716A2183004DA003B15ED /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		065716A4183004DA003B15ED /* Clock_DriftTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Clock_DriftTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		06571673183004DA003B15ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0657167C183004DA003B15ED /* CoreGraphics.framework in Frameworks */,
+				0657167E183004DA003B15ED /* UIKit.framework in Frameworks */,
+				0657167A183004DA003B15ED /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		06571694183004DA003B15ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06571699183004DA003B15ED /* XCTest.framework in Frameworks */,
+				0657169B183004DA003B15ED /* UIKit.framework in Frameworks */,
+				0657169A183004DA003B15ED /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0657166D183004DA003B15ED = {
+			isa = PBXGroup;
+			children = (
+				0657167F183004DA003B15ED /* Clock Drift */,
+				0657169E183004DA003B15ED /* Clock DriftTests */,
+				06571678183004DA003B15ED /* Frameworks */,
+				06571677183004DA003B15ED /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		06571677183004DA003B15ED /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				06571676183004DA003B15ED /* Clock Drift.app */,
+				06571697183004DA003B15ED /* Clock DriftTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		06571678183004DA003B15ED /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				06571679183004DA003B15ED /* Foundation.framework */,
+				0657167B183004DA003B15ED /* CoreGraphics.framework */,
+				0657167D183004DA003B15ED /* UIKit.framework */,
+				06571698183004DA003B15ED /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0657167F183004DA003B15ED /* Clock Drift */ = {
+			isa = PBXGroup;
+			children = (
+				06571688183004DA003B15ED /* CDAppDelegate.h */,
+				06571689183004DA003B15ED /* CDAppDelegate.m */,
+				0657168B183004DA003B15ED /* Main.storyboard */,
+				0657168E183004DA003B15ED /* CDViewController.h */,
+				0657168F183004DA003B15ED /* CDViewController.m */,
+				06571691183004DA003B15ED /* Images.xcassets */,
+				06571680183004DA003B15ED /* Supporting Files */,
+			);
+			path = "Clock Drift";
+			sourceTree = "<group>";
+		};
+		06571680183004DA003B15ED /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				06571681183004DA003B15ED /* Clock Drift-Info.plist */,
+				06571682183004DA003B15ED /* InfoPlist.strings */,
+				06571685183004DA003B15ED /* main.m */,
+				06571687183004DA003B15ED /* Clock Drift-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0657169E183004DA003B15ED /* Clock DriftTests */ = {
+			isa = PBXGroup;
+			children = (
+				065716A4183004DA003B15ED /* Clock_DriftTests.m */,
+				0657169F183004DA003B15ED /* Supporting Files */,
+			);
+			path = "Clock DriftTests";
+			sourceTree = "<group>";
+		};
+		0657169F183004DA003B15ED /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				065716A0183004DA003B15ED /* Clock DriftTests-Info.plist */,
+				065716A1183004DA003B15ED /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		06571675183004DA003B15ED /* Clock Drift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 065716A8183004DA003B15ED /* Build configuration list for PBXNativeTarget "Clock Drift" */;
+			buildPhases = (
+				06571672183004DA003B15ED /* Sources */,
+				06571673183004DA003B15ED /* Frameworks */,
+				06571674183004DA003B15ED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Clock Drift";
+			productName = "Clock Drift";
+			productReference = 06571676183004DA003B15ED /* Clock Drift.app */;
+			productType = "com.apple.product-type.application";
+		};
+		06571696183004DA003B15ED /* Clock DriftTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 065716AB183004DA003B15ED /* Build configuration list for PBXNativeTarget "Clock DriftTests" */;
+			buildPhases = (
+				06571693183004DA003B15ED /* Sources */,
+				06571694183004DA003B15ED /* Frameworks */,
+				06571695183004DA003B15ED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0657169D183004DA003B15ED /* PBXTargetDependency */,
+			);
+			name = "Clock DriftTests";
+			productName = "Clock DriftTests";
+			productReference = 06571697183004DA003B15ED /* Clock DriftTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0657166E183004DA003B15ED /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = CD;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Astro HQ LLC";
+				TargetAttributes = {
+					06571696183004DA003B15ED = {
+						TestTargetID = 06571675183004DA003B15ED;
+					};
+				};
+			};
+			buildConfigurationList = 06571671183004DA003B15ED /* Build configuration list for PBXProject "Clock Drift" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0657166D183004DA003B15ED;
+			productRefGroup = 06571677183004DA003B15ED /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				06571675183004DA003B15ED /* Clock Drift */,
+				06571696183004DA003B15ED /* Clock DriftTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		06571674183004DA003B15ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06571692183004DA003B15ED /* Images.xcassets in Resources */,
+				06571684183004DA003B15ED /* InfoPlist.strings in Resources */,
+				0657168D183004DA003B15ED /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		06571695183004DA003B15ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				065716A3183004DA003B15ED /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		06571672183004DA003B15ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06571686183004DA003B15ED /* main.m in Sources */,
+				0657168A183004DA003B15ED /* CDAppDelegate.m in Sources */,
+				06571690183004DA003B15ED /* CDViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		06571693183004DA003B15ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				065716A5183004DA003B15ED /* Clock_DriftTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0657169D183004DA003B15ED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 06571675183004DA003B15ED /* Clock Drift */;
+			targetProxy = 0657169C183004DA003B15ED /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		06571682183004DA003B15ED /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				06571683183004DA003B15ED /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		0657168B183004DA003B15ED /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0657168C183004DA003B15ED /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		065716A1183004DA003B15ED /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				065716A2183004DA003B15ED /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		065716A6183004DA003B15ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		065716A7183004DA003B15ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		065716A9183004DA003B15ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Clock Drift/Clock Drift-Prefix.pch";
+				INFOPLIST_FILE = "Clock Drift/Clock Drift-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		065716AA183004DA003B15ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Clock Drift/Clock Drift-Prefix.pch";
+				INFOPLIST_FILE = "Clock Drift/Clock Drift-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		065716AC183004DA003B15ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Clock Drift.app/Clock Drift";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Clock Drift/Clock Drift-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Clock DriftTests/Clock DriftTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		065716AD183004DA003B15ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Clock Drift.app/Clock Drift";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Clock Drift/Clock Drift-Prefix.pch";
+				INFOPLIST_FILE = "Clock DriftTests/Clock DriftTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		06571671183004DA003B15ED /* Build configuration list for PBXProject "Clock Drift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				065716A6183004DA003B15ED /* Debug */,
+				065716A7183004DA003B15ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		065716A8183004DA003B15ED /* Build configuration list for PBXNativeTarget "Clock Drift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				065716A9183004DA003B15ED /* Debug */,
+				065716AA183004DA003B15ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		065716AB183004DA003B15ED /* Build configuration list for PBXNativeTarget "Clock DriftTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				065716AC183004DA003B15ED /* Debug */,
+				065716AD183004DA003B15ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0657166E183004DA003B15ED /* Project object */;
+}
