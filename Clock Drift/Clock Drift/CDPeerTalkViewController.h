@@ -14,6 +14,8 @@
 {
     __weak PTChannel *serverChannel_;
     __weak PTChannel *peerChannel_;
+    
+    NSTimer* _sendTimer;
 }
 
 - (void)appendOutputMessage:(NSString*)message;

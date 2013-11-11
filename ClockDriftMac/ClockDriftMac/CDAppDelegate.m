@@ -159,6 +159,17 @@
     if (type == PTExampleFrameTypeDeviceInfo) {
         NSDictionary *deviceInfo = [NSDictionary dictionaryWithContentsOfDispatchData:payload.dispatchData];
         [self presentMessage:[NSString stringWithFormat:@"Connected to %@", deviceInfo.description] isStatus:YES];
+        
+        NSDate* deviceDate = deviceInfo[@"date"];
+        // NSDate* now = [NSDate date];
+        
+        CGFloat timediff = [deviceDate timeIntervalSinceNow];
+        
+        NSLog(@"timediff: %f", timediff);
+        
+        [_timeDiffTextField setStringValue:[NSString stringWithFormat:@"%.3f sec", timediff]];
+        [_timeDiffTextField setBackgroundColor:[NSColor yellowColor]];
+        
     } else if (type == PTExampleFrameTypeTextMessage) {
         PTExampleTextFrame *textFrame = (PTExampleTextFrame*)payload.data;
         textFrame->length = ntohl(textFrame->length);
@@ -282,6 +293,10 @@
     
     [channel connectToPort:PTExampleProtocolIPv4PortNumber overUSBHub:PTUSBHub.sharedHub deviceID:connectingToDeviceID_ callback:^(NSError *error) {
         if (error) {
+            
+            [_timeDiffTextField setBackgroundColor:[NSColor redColor]];
+            [_timeDiffTextField setStringValue:@"Disconnected"];
+            
             if (error.domain == PTUSBHubErrorDomain && error.code == PTUSBHubErrorConnectionRefused) {
                 NSLog(@"Failed to connect to device #%@: %@", channel.userInfo, error);
             } else {

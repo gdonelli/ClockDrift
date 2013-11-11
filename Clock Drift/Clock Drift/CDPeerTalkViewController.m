@@ -105,6 +105,8 @@
                           device.systemVersion, @"systemVersion",
                           screenSizeDict, @"screenSize",
                           [NSNumber numberWithDouble:screen.scale], @"screenScale",
+                          [NSDate new], @"date",
+                          
                           nil];
     dispatch_data_t payload = [info createReferencingDispatchData];
     [peerChannel_ sendFrameOfType:PTExampleFrameTypeDeviceInfo tag:PTFrameNoTag withPayload:payload callback:^(NSError *error) {
@@ -156,6 +158,8 @@
     } else {
         [self appendOutputMessage:[NSString stringWithFormat:@"Disconnected from %@", channel.userInfo]]; 
     }
+    
+    [self _stopSendTimer];
 }
 
 // For listening channels, this method is invoked when a new connection has been
@@ -178,8 +182,33 @@
 
     // Send some information about ourselves to the other end
     [self sendDeviceInfo];
+    
+    [self _startSendTimer];
 }
 
+- (void) _startSendTimer
+{
+    if (!_sendTimer) {
+        _sendTimer = [NSTimer scheduledTimerWithTimeInterval: 1 
+                                                      target: self 
+                                                    selector: @selector(_sendCallback:) 
+                                                    userInfo: nil 
+                                                     repeats: YES];
+    }
+}
+
+- (void) _stopSendTimer
+{
+    if (_sendTimer) {
+        [_sendTimer invalidate];
+        _sendTimer = nil;
+    }
+}
+
+- (void) _sendCallback:(NSTimer*)timer
+{
+    [self sendDeviceInfo];
+}
 
 - (void)dealloc {
     [_disconnectedLabel release];

@@ -30,6 +30,7 @@ static const NSTimeInterval PTAppReconnectDelay = 1.0;
 }
 
 @property (assign) IBOutlet NSWindow *window;
+@property (weak) IBOutlet NSTextField *timeDiffTextField;
 
 - (IBAction)sendMessage:(id)sender;
 

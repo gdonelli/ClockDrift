@@ -269,6 +269,9 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Astro HQ LLC";
 				TargetAttributes = {
+					065716C918304885003B15ED = {
+						DevelopmentTeam = 9CD43937WW;
+					};
 					065716EA18304885003B15ED = {
 						TestTargetID = 065716C918304885003B15ED;
 					};
@@ -493,6 +496,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
+				CODE_SIGN_IDENTITY = "Developer ID Application";
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ClockDriftMac/ClockDriftMac-Prefix.pch";
@@ -506,6 +510,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
+				CODE_SIGN_IDENTITY = "Developer ID Application";
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ClockDriftMac/ClockDriftMac-Prefix.pch";
